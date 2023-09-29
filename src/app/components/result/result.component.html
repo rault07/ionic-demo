@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-subtitle class="ion-margin">
+    <span class="text-primary">{{ index }}. </span>
+    <span class="result-source-name">{{ result.name }}</span>
+  </ion-card-subtitle>
+
+
+  <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+    {{ result.species }}
+  </ion-card-title>
+
+  <ion-img [src]="result.image"></ion-img>
+
+  <ion-card-content>
+    <p>{{ result.gender }}</p>
+  </ion-card-content>
+</ion-card>
