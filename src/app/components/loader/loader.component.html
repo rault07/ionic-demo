@@ -1,0 +1,82 @@
+<!-- <swiper-container
+        #swiper>
+  <swiper-slide *ngFor="let image of pruebaJsonImg">
+    <div>
+      <img [src]="image.img" />
+    </div>
+    <div class="ion-text-start">
+      <h3 [innerHTML]="image.titulo"></h3>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper-slide>
+</swiper-container> -->
+
+
+
+
+<ion-content>
+  <div class="swiper-containerr" #swiper>
+    <div class="swiper-wrapper" >
+      <div class="swiper-slide" *ngFor="let image of pruebaJsonImg">
+        <div>
+          <img [src]="image.img" />
+        </div>
+        <div class="ion-text-start">
+          <h3 [innerHTML]="image.titulo"></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</ion-content>
+
+
+
+
+
+
+<!-- <swiper-container
+        #swiperContainer
+        id="swiperContainer"
+        class="mySwiper" 
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="1000"
+        autoplay-disable-on-interaction="false">
+  <swiper-slide *ngFor="let image of pruebaJsonImg">
+    <div>
+      <img [src]="image.img" />
+    </div>
+    <div class="ion-text-start">
+      <h3 [innerHTML]="image.titulo"></h3>
+    </div>
+  </swiper-slide>
+</swiper-container> -->
+
+
+
+<ion-footer class="ion-no-border">
+  <ion-grid fixed>
+
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-button class="btn-actualizar" color="primary" expand="full" shape="round" >
+          ACTUALIZA TU PLAN
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-button fill="clear" expand="full">
+          <ion-label color="dark">Ver más</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-footer>

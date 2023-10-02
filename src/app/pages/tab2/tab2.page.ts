@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoaderReutilizableService } from 'src/app/services/loader-reutilizable.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(
+    private loaderReutilizable: LoaderReutilizableService
+  ) {}
+
+
+  btnModal() {
+    this.loaderReutilizable.mostrarModal();
+  }
 
 }

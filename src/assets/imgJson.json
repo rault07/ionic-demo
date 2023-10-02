@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Imagen 1",
+    "imagenUrl": "assets/img/dinero.svg"
+  },
+  {
+    "id": 2,
+    "nombre": "Imagen 2",
+    "imagenUrl": "assets/img/mujer.svg"
+  },
+  {
+    "id": 3,
+    "nombre": "Imagen 3",
+    "imagenUrl": "assets/img/pastel.svg"
+  }
+]

@@ -1,0 +1,50 @@
+.swiper-containerr {
+  width: 100%;
+  height: 100%;
+}
+ 
+swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.btn-actualizar {
+  height: 60px;
+}
+
+
+
+/* En tu-componente.page.scss o en tu archivo de estilos global */
+.swiper-slide {
+  display: flex; /* Usa flexbox para centrar el contenido verticalmente y horizontalmente */
+  flex-direction: column; /* Apila el contenido verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100%;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo adicional para la imagen si es necesario */
+.swiper-slide img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.custom-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  height: 100%; /* Establece la altura del slide al 100% del contenedor */
+  text-align: center; /* Alinea el texto en el centro */
+}
+
