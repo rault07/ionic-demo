@@ -11,7 +11,7 @@ register();
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss'],
 })
-export class LoaderComponent  implements AfterViewInit  {
+export class LoaderComponent  implements AfterViewInit, OnInit {
 
   imagesData: any[] = [];
   pruebaJsonImg = [
@@ -33,6 +33,16 @@ export class LoaderComponent  implements AfterViewInit  {
   constructor(
     private loaderReutilizable: LoaderReutilizableService,
   ) { }
+
+  ngOnInit(): void {  
+
+    this.getImagesData();
+  }
+
+  btnLoaderModalCloset() {
+    this.loaderReutilizable.cerrarModal();
+  }
+
   
   //@ViewChild('swiper') swiper: any;
   @ViewChild('swiper') swiperContainer: any;
@@ -55,5 +65,12 @@ export class LoaderComponent  implements AfterViewInit  {
     });
   }
 
+  getImagesData() {
+    this.loaderReutilizable.getImagesData().subscribe((data) => {
+      this.imagesData = data;
+    });
+  }
 
+  
+  
 }

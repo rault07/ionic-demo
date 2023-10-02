@@ -19,7 +19,7 @@
 <ion-content>
   <div class="swiper-containerr" #swiper>
     <div class="swiper-wrapper" >
-      <div class="swiper-slide" *ngFor="let image of pruebaJsonImg">
+      <div class="swiper-slide" *ngFor="let image of pruebaJsonImg"> <!-- imagesData -->
         <div>
           <img [src]="image.img" />
         </div>
@@ -72,7 +72,7 @@
 
     <ion-row>
       <ion-col size="10" offset="1">
-        <ion-button fill="clear" expand="full">
+        <ion-button fill="clear" expand="full" (click)="btnLoaderModalCloset()">
           <ion-label color="dark">Ver más</ion-label>
         </ion-button>
       </ion-col>

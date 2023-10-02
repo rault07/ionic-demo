@@ -2,16 +2,19 @@
   {
     "id": 1,
     "nombre": "Imagen 1",
-    "imagenUrl": "assets/img/dinero.svg"
+    "img": "assets/img/dinero.svg",
+    "titulo": "<center>[^_^] Recupera tu inversión<br> en 3 meses.</center>"
   },
   {
     "id": 2,
     "nombre": "Imagen 2",
-    "imagenUrl": "assets/img/mujer.svg"
+    "img": "assets/img/mujer.svg",
+    "titulo": "<center>[^_^] Ropa para ella<br>3 x 2</center>"
   },
   {
     "id": 3,
     "nombre": "Imagen 3",
-    "imagenUrl": "assets/img/pastel.svg"
+    "img": "assets/img/pastel.svg",
+    "titulo": "<center>[^_^] Muffin de Chocolate<br>por S/ 9.99 </center>"
   }
 ]

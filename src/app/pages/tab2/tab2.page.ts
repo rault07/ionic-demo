@@ -17,4 +17,8 @@ export class Tab2Page {
     this.loaderReutilizable.mostrarModal();
   }
 
+  btnModalCloset() {
+    this.loaderReutilizable.cerrarModal();
+  }
+
 }
